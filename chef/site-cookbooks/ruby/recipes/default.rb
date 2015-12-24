@@ -42,7 +42,7 @@ template "rbenv.sh" do
  source "rbenv.sh.erb"
 end
 
-%w{readline ncurses gdbm glibc openssl libyaml libffi zlib readline-devel ncurses-devel gdbm-devel glibc-devel gcc openssl-devel make libyaml-devel libffi-devel zlib-devel patch}.each do |pkg|
+%w{readline ncurses gdbm glibc openssl libyaml libffi zlib readline-devel ncurses-devel gdbm-devel glibc-devel gcc openssl-devel make libyaml-devel libffi-devel zlib-devel patch ruby-devel}.each do |pkg|
  package pkg do
  action :install
  end
