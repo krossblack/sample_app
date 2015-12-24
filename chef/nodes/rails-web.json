@@ -1,5 +1,7 @@
 {
   "run_list": [
-    "recipe[git]"
+    "recipe[git]",
+    "recipe[rails]",
+    "recipe[ruby]"
   ]
 }
