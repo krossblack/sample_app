@@ -21,3 +21,5 @@ end
     notifies :reload, 'service[nginx]'
   end
 end
+
+include_recipe 'nginx::setting'
