@@ -27,3 +27,5 @@ rpm_package "#{package_rpm}" do
 end
 
 package 'postgresql-devel'
+
+package 'gcc-c++'
