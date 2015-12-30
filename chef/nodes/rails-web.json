@@ -2,6 +2,7 @@
   "run_list": [
     "recipe[git]",
     "recipe[rails]",
-    "recipe[ruby]"
+    "recipe[ruby]",
+    "recipe[nginx]"
   ]
 }
