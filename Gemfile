@@ -12,6 +12,7 @@ gem 'bootstrap-will_paginate', '0.0.9'
 
 gem 'capistrano'
 gem 'capistrano-bundler'
+gem 'capistrano-rails'
 gem 'capistrano3-unicorn'
 gem 'unicorn'
 gem 'therubyracer', platforms: :ruby
