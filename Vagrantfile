@@ -9,8 +9,8 @@ Vagrant.configure(2) do |config|
     web.vm.network "private_network", ip: "192.168.34.40"
     web.cache.scope = :box if Vagrant.has_plugin? 'vagrant-cachier'
   end
-  config.vm.define :batch do |batch|
-    batch.vm.network "private_network", ip: "192.168.34.41"
-    batch.cache.scope = :box if Vagrant.has_plugin? 'vagrant-cachier'
+  config.vm.define :db do |db|
+    db.vm.network "private_network", ip: "192.168.34.41"
+    db.cache.scope = :box if Vagrant.has_plugin? 'vagrant-cachier'
   end
 end
