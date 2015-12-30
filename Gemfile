@@ -14,6 +14,7 @@ gem 'capistrano'
 gem 'capistrano-bundler'
 gem 'capistrano3-unicorn'
 gem 'unicorn'
+gem 'therubyracer', platforms: :ruby
 
 group :development, :test do
   #gem 'pg', '0.15.1'
@@ -24,7 +25,6 @@ group :development, :test do
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.5.6'
-  gem 'therubyracer', platforms: :ruby
 
 end
 
