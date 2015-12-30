@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 directory '/var/' do
-  mode '0777'
+  mode '0755'
 end
 
 
