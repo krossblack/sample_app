@@ -51,3 +51,11 @@ namespace :deploy do
     end
   end
 end
+
+# デプロイ前に実行する必要がある。
+desc 'execute before deploy'
+task :db_create do
+  on roles(:db) do |host|
+    execute "bundle exec rake db:create"
+  end
+end
