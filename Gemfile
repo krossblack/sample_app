@@ -10,6 +10,13 @@ gem 'faker', '1.1.2'
 gem 'will_paginate','3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 
+gem 'capistrano'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+gem 'capistrano3-unicorn'
+gem 'unicorn'
+gem 'therubyracer', platforms: :ruby
+
 group :development, :test do
   #gem 'pg', '0.15.1'
   gem 'sqlite3', '1.3.8'
