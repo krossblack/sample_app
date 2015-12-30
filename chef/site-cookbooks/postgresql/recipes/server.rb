@@ -19,4 +19,17 @@ end
 
 service 'postgresql' do
   action [:enable, :start]
+  supports restart: true, reload: true
+end
+
+cookbook_file '/var/lib/pgsql/data/pg_hba.conf' do
+  notifies :restart, 'service[postgresql]'
+end
+
+cookbook_file '/var/lib/pgsql/data/pg_ident.conf' do
+  notifies :restart, 'service[postgresql]'
+end
+
+cookbook_file '/var/lib/pgsql/data/postgresql.conf' do
+  notifies :restart, 'service[postgresql]'
 end
