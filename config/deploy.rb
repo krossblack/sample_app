@@ -45,4 +45,9 @@ namespace :deploy do
     end
   end
 
+  task :restart do
+    on roles(:web), in: :groups, limit: 1, wait: 15 do
+      invoke 'unicorn:restart'
+    end
+  end
 end
