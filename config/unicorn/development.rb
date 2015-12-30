@@ -25,7 +25,8 @@ stdout_path 'log/unicorn_stderr.log'
 # Nginxで使用する場合は以下の設定を行う。
 # listen File.expand_path('../../tmp/sockets/unicorn.sock', __FILE__)
 # とりあえず起動して動作確認をしたい場合は以下の設定を行う。
-listen 8080
+#listen 8080
+listen "#{working_directory}/tmp/sockets/unicorn.sock"
 # ※「backlog」や「tcp_nopush」の設定もあるけど、よくわかって無い。
 
 # プロセスの停止などに必要なPIDファイルの保存先を指定。
