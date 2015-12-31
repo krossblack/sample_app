@@ -23,3 +23,5 @@ end
 include_recipe 'postgresql::client'
 
 package 'gcc-c++'
+
+include_recipe 'rails::logrotate'
