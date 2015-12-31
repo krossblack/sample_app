@@ -6,8 +6,11 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+include_recipe 'user'
+
 directory '/var/' do
   mode '0755'
+  owner 'app'
 end
 
 

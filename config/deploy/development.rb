@@ -3,9 +3,9 @@ ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 set :url, 'http://localhost/'
 set :repo_url, 'https://github.com/krossblack/sample_app'
 set :ssh_options, {
-   user: 'vagrant',
+   user: 'app',
    keys: %w(~/.vagrant.d/insecure_private_key),
-   forward_agent: true,
+   forward_agent: false,
    auth_methods: %w(publickey)
 }
 
