@@ -3,6 +3,7 @@
     "recipe[git]",
     "recipe[rails]",
     "recipe[ruby]",
-    "recipe[nginx]"
+    "recipe[nginx]",
+    "recipe[user]"
   ]
 }

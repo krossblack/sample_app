@@ -1,0 +1,9 @@
+{
+  "id": "app",
+  "uid": "app",
+  "gid": "app",
+  "groups": [ "wheel" ],
+  "home": "/home/app",
+  "shell": "/bin/bash"
+}
+
