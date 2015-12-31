@@ -48,20 +48,20 @@ end
  end
 end
 
-execute "rbenv install 2.0.0-p451" do
- command "/usr/local/rbenv/bin/rbenv install 2.0.0-p451"
- action :run
- not_if { ::File.exists?("/usr/local/rbenv/bin/rbenv") }
-end
-
-execute "rbenv rehash" do
- command "/usr/local/rbenv/bin/rbenv rehash"
- action :run
-end
-
-execute "rbenv global 2.0.0-p451" do
- command "/usr/local/rbenv/bin/rbenv global 2.0.0-p451"
- action :run
-end
+#execute "rbenv install 2.0.0-p451" do
+# command "/usr/local/rbenv/bin/rbenv install 2.0.0-p451"
+# action :run
+# not_if { ::File.exists?("/usr/local/rbenv/bin/rbenv") }
+#end
+#
+#execute "rbenv rehash" do
+# command "/usr/local/rbenv/bin/rbenv rehash"
+# action :run
+#end
+#
+#execute "rbenv global 2.0.0-p451" do
+# command "/usr/local/rbenv/bin/rbenv global 2.0.0-p451"
+# action :run
+#end
 
 gem_package 'bundler'
