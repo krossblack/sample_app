@@ -34,7 +34,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 set :unicorn_roles, :web
-set :unicorn_bin, 'unicorn_rails'
+#set :unicorn_bin, 'unicorn_rails'
 
 namespace :deploy do
   after :restart, :clear_cache do
