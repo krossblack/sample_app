@@ -37,7 +37,6 @@ set :unicorn_roles, :web
 set :unicorn_bin, 'unicorn_rails'
 
 namespace :deploy do
-
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
@@ -61,3 +60,5 @@ task :db_create do
     execute "bundle exec rake db:create"
   end
 end
+
+after 'unicorn:restart', 'deploy:restart'
