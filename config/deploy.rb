@@ -61,4 +61,4 @@ task :db_create do
   end
 end
 
-after 'unicorn:restart', 'deploy:restart'
+after 'deploy:publishing', 'deploy:restart'
