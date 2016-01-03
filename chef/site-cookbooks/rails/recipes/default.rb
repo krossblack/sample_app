@@ -6,8 +6,11 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+include_recipe 'user'
+
 directory '/var/' do
   mode '0755'
+  owner 'app'
 end
 
 
@@ -20,3 +23,5 @@ end
 include_recipe 'postgresql::client'
 
 package 'gcc-c++'
+
+include_recipe 'rails::logrotate'

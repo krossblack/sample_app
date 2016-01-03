@@ -4,7 +4,7 @@ rails_root = '/var/www/my_app_name'
 # rails_env = ENV['RAILS_ENV'] || "development"
 
 # 追記に記載してます。入れた方がいいです。
-ENV['BUNDLE_GEMFILE'] = rails_root + "/Gemfile"
+ENV['BUNDLE_GEMFILE'] = rails_root + "current/Gemfile"
 
 # Unicornは複数のワーカーで起動するのでワーカー数を定義
 # サーバーのメモリなどによって変更すること。
