@@ -6,4 +6,6 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+include_recipe 'postgresql'
+
 package 'postgresql-devel'

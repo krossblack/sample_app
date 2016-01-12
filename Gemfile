@@ -16,6 +16,7 @@ gem 'capistrano-rails'
 gem 'capistrano3-unicorn'
 gem 'unicorn'
 gem 'therubyracer', platforms: :ruby
+gem 'pg', '0.15.1'
 
 group :development, :test do
   #gem 'pg', '0.15.1'
@@ -49,7 +50,6 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
